@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="songlib.SongLibController">
+   <children>
+ 	<Button fx:id="saveButton" disable="true" layoutX="498.0" layoutY="286.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="26.0" prefWidth="70.0" text="Save" visible="false" />
+      <Button fx:id="cancelButton" disable="true" layoutX="410.0" layoutY="286.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="26.0" prefWidth="70.0" text="Cancel" visible="false" />
+      <Button fx:id="addButton" layoutX="416.0" layoutY="358.0" mnemonicParsing="false" onAction="#addSong" prefHeight="26.0" prefWidth="144.0" text="Add" />
+      <Button fx:id="editButton" layoutX="416.0" layoutY="400.0" mnemonicParsing="false" onAction="#editSong" prefHeight="26.0" prefWidth="144.0" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="416.0" layoutY="438.0" mnemonicParsing="false" onAction="#deleteSong" prefHeight="26.0" prefWidth="144.0" text="Delete" />
+      <ListView fx:id="listView" layoutX="27.0" layoutY="26.0" onMouseClicked="#listClick" prefHeight="438.0" prefWidth="339.0" />
+      <TextField fx:id="nameTextField" layoutX="408.0" layoutY="68.0" promptText="Enter Song Name" />
+      <TextField fx:id="artistTextField" layoutX="408.0" layoutY="127.0" promptText="Enter Artist Name" />
+      <TextField fx:id="albumTextField" layoutX="408.0" layoutY="186.0" promptText="Enter Album Name" />
+      <TextField fx:id="yearTextField" layoutX="408.0" layoutY="245.0" promptText="Enter Song Year" />
+      <Label layoutX="408.0" layoutY="42.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="100.0" text="Artist">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="220.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="162.0" text="Album:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
